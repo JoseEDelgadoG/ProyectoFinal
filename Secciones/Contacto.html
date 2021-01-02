@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="#menu" class="icon">
+            <img src="../imagenes/menu.png" class="icon_img open" alt="Abrir menu">
+            </a>
+            <img src="../imagenes/LogoEdit.jpeg" alt="Logo">
+    
+            <nav id="menu">
+                <a href="#" class="icon">
+                <img src="../imagenes/cerrar.png" class="icon_img close" alt="Cerrar menu">
+                </a>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Galeria.html">Galeria</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contenedor fondo_contacto">
+            <div class="contacto">
+                <h2>Contacto</h2>
+            <form action="#" target="" method="get" name="formDatosPersonales">
+
+                <label for="nombre">Nombre</label>
+                <input class="informacion" type="text" name="nombres" id="nombre" placeholder="Escribe tus nombres"/>
+            
+                <label for="apellidos">Apellidos</label>
+                <input class="informacion" type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellidos"/>
+            
+                <label for="email">Email</label>
+                <input class="informacion" type="email" name="email" id="email" placeholder="Escribe tu Email" required />
+            
+                <label for="asunto">Asunto</label>
+                <input class="informacion" type ="text" name="asunto" id="asunto" placeholder="Titulo de la consulta"/>
+            
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" for="mensaje" placeholder="Escriba su mensaje"></textarea>
+                
+                <input class="enviar" type="submit" name="enviar" value="Enviar datos"/>
+            </form>
+            </div>
+            
+            <div class="contenedor">
+                <div class="color_titulo contacto_iframe">
+                <article>
+                    <h2>Ubicación</h2>
+                        <iframe class="borde" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d410.5684495469819!2d-58.42795953701079!3d-34.59031208876658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1609353840114!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </article>
+                </div>
+            </div>
+    </div>
+    </section>    
+
+    <footer>
+        <section class="contenedor">
+            <div>
+                <nav class="footer_items">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="Galeria.html">Galeria</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="contenedor">
+            <div>
+                <p>Copyright 2020 - José Delgado - Empresa: Professional Bowlers Shop. Dirección: Calle Honduras 4759, Palermo, Capital Federal.  
+                Teléfonos: (+54 9) 11-3265 9834 / 11-5476 8798. Email: contacto@pbshop.com</p>
+
+                <nav class="social_media">
+                    <ul>
+                        <li><a href="https://www.instagram.com/" target="_blank"><span class="iconify instagram" data-icon="mdi:instagram" data-inline="false"></span></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><span class="iconify facebook" data-icon="mdi:facebook" data-inline="false"></span></a></li>
+                        <li><a href="https://twitter.com/?lang=es" target="_blank"><span class="iconify twitter" data-icon="mdi:twitter" data-inline="false"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </footer>
+</section>
+</body>
+</html>

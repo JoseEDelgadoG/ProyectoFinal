@@ -1,0 +1,405 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+a:hover {
+    color: #ff0000;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER  */
+
+header {
+    background: rgb(0, 35, 79);
+    padding: 15px 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+header ul li a {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+} 
+
+header img {
+    width: 100px;
+}
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 35, 79);
+        display: none;
+    }
+
+    #menu:target {
+        display: block;
+    }
+    
+    .icon {
+        display: block;
+    }
+
+    .icon_img {
+        filter: invert(100%);
+        width: 30px;
+    }
+
+    .close {
+        position: absolute;
+        left: 20px;
+        top: 50px;
+    }
+
+    header ul {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        margin-left: 20px 0;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+}
+
+/* carousel */
+
+#carousel {
+    text-align: center;
+}
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Productos */
+
+#productos {
+    padding: 30px;
+    font-weight: bold;
+}
+
+#productos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #ff0000;
+}
+
+#productos h3 {
+    margin-top: 40px;
+    width: 100%;
+    color: #ff0000;
+}
+
+#productos .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos article {
+    width: 15%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.productos article img {
+    width: 175px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+
+}
+.fondo_modal {
+    background: rgba(15, 11, 11, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+
+}
+
+#AspectSolid:target, #ClearPoly:target, #HoneyBadger:target, #PrismWarpSolid:target, #TwistRed:target,
+#TwistPink:target, #Frequency:target, #AeroSolid:target, #BlackWidow:target, #HaloVision:target, #HyRoadBlack:target,
+#ProofPearl:target, #TourBlack:target, #Rampage:target, #Vapor:target, #Versa:target, #ProBOA:target,
+#SST6Pro:target, #SST8ProWhiteGold:target, #SST8PowerFrame:target, #ForcePlus:target, #RogueOrange:target,
+#ForceRanger:target, #SP3Metallic:target, #EZGrip:target, #GripSack:target, #C300Power:target, #GripBlack:target,
+#GripOrange:target, #CoolmaxPlus:target, #Neoprene:target, #ScentedRosinBag:target, #XtraRoll:target, #V-25Roll:target,
+#BevelKnife:target, #BrushHeavyDuty:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal {
+    background: #ffffff;
+    padding: 20px;
+    width: 15%;
+    border-radius: 15px;
+}
+
+.modal img {
+    width: 150px;
+}
+
+/* EVENTOS */
+
+.eventos {
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.eventos h2 {
+    text-align: center;
+    padding: 15px;
+    color: #ff0000;
+}
+
+.eventos h3 {
+    padding: 5px;
+}
+.eventos li {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.estilos_eventos {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.evento_1, .evento_2, .evento_3, .evento_4 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+}
+/* GALERIA */
+
+.galeria {
+    padding: 30px;
+}
+
+.galeria h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff0000;
+}
+
+.galeria .parrafo {
+    text-align: justify; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(0, 35, 79, 0.2);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.galeria ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria ul iframe {
+    padding: 5px;
+    border-radius: 5%;
+}
+
+/* CONTACTO */
+
+.contacto h2 {
+        text-align: center;
+        padding: 20px 20px;
+        margin: 10px;
+        color: #ff0000;
+        font-weight: bold;
+}
+
+.color_titulo h2 {
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+
+.contacto_iframe {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.color_titulo ul {
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 50%;
+}
+
+.contacto form{
+        width:300px;
+        padding:15px;
+        border-radius:10px;
+        margin: auto;
+        background-color:rgb(177, 176, 176);
+}
+
+.contacto form label{
+        width:80px;
+        font-weight:bold;
+        display:inline-block;
+}
+
+.contacto .informacion {
+        width:180px;
+        padding:10px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background: #ffffff;
+        margin:8px 0;
+        display: inline-block;
+}
+
+.contacto .enviar {
+        width:100%;
+        padding:8px 16px;
+        margin-top:32px;
+        border:1px solid #000;
+        border-radius:5px;
+        display:block;
+        background-color:#f6f6f6;
+} 
+
+.contacto .enviar:hover{
+        background: rgb(0, 39, 75);
+        color: white;
+}
+
+.contacto textarea{
+        width:100%;
+        height:100px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background-color:#f6f6f6;			
+        margin:8px 0;
+        resize:none;
+        display:block;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgb(0, 35, 79);
+    text-align: center;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    }
+
+.footer_items a {
+    margin: 80px;
+    color: #ffffff;
+}
+.footer_items li {
+    display: inline-block;
+}
+
+footer ul li a {
+    text-transform: uppercase;
+}
+
+.footer_items a:hover {
+    color: #ff0000;
+}
+
+footer .social_media {  
+        font-size: 2em;
+    }
+
+footer .instagram {
+        color: #d6249f;
+    }
+
+footer .facebook {
+        color: 	#4267B2;
+    }
+
+footer .twitter {
+        color: 	#1DA1F2;
+    }
